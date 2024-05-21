@@ -1,0 +1,25 @@
+const NFTs=[]
+function mintNFT (_name,_haircolor,_Age){
+    const NFT ={
+        "name":_name,
+        "haircolor":_haircolor,
+        "age":_Age,
+    }
+    NFTs.push(NFT)
+    console.log("Minted:" +_name);
+}
+function listNFTs(){
+    for(let i=0;i<NFTs.length;i++){
+        console.log("Name:\t\t" + NFTs[i].name);
+        console.log("Haircolor:\t\t" + NFTs[i].haircolor);
+        console.log("age:\t\t" + NFTs[i].Age);
+    }
+}
+function getTotalSupply(){
+    console.log("\n" + NFTs.length);
+}
+mintNFT("TANU","Black",'19');
+mintNFT("aNU","Black",'19');
+mintNFT("TANUja","Black",'19');
+listNFTs();
+getTotalSupply;
